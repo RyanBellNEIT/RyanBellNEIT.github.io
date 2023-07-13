@@ -78,18 +78,6 @@ nav a:hover::before{
     width: 100%;
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(37, 38, 39, .25);
-    color: white;
-    position: relative;
-    overflow: hidden;
-    min-height: 125vh;
-}
-
 .video-bg{
     position: absolute;
     top: 50%;
@@ -100,23 +88,40 @@ nav a:hover::before{
     z-index: -1;
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(37, 38, 39, .25);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 125vh;
+    white-space: nowrap;
+}
+
 .hero h1{
     font-size: 80px;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     font-weight: 700;
+    position: relative;
 }
 
 .hero h2{
+    position: relative;
     font-size: 44px;
     font-weight: 400;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
 .hero ul{
     display: inline-block;
     list-style: none;
+    padding: 0;
 }
 
 .projects{
@@ -161,4 +166,36 @@ nav a:hover::before{
         --num-cols: 2;
         --row-height: 200px;
     }
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.aboutTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.about p{
+    float: left;
+    font-size: 25px;
+    max-width: 33%;
+    height: fit-content;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.about img{
+    float: right;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
+    padding-right: 10%;
 }
