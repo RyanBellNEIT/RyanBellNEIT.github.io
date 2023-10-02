@@ -23,9 +23,20 @@ body{
     font-family: 'Agdasima', sans-serif;
 }
 
-.container {
+.nav-bar {
     width: 100%;
     margin: 0 auto;
+}
+
+.socials{
+    float: right;
+}
+
+nav ul div img{
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    max-height: 35px;
 }
 
 nav{
