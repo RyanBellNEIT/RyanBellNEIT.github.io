@@ -118,7 +118,7 @@ nav a:hover::before{
     width: auto;
     object-fit: cover;
     max-height: 35px;
-    margin: 5px 10px 10px 0;
+    margin: 7px 10px 10px 0;
 }
 /*#endregion Socials*/
 
@@ -197,7 +197,7 @@ nav a:hover::before{
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
 
-    
+    overflow: hidden;
 
     gap: var(--gap);
     margin: 50px;
@@ -210,6 +210,21 @@ nav a:hover::before{
     object-fit: cover;
     border: solid rgb(61, 61, 61) 4px;
 }
+
+.image-grid > a > input:hover{
+    animation: pulse 800ms ease-in-out;
+}
+
+@keyframes pulse {
+    from, to{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.01;
+    }
+}
+
 /*#endregion Projects*/
 
 /*#region About*/
