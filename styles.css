@@ -23,25 +23,23 @@ body{
     font-family: 'Agdasima', sans-serif;
 }
 
-.nav-bar {
-    width: 100%;
-    margin: 0 auto;
+/*Anything under 1024px*/
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
 
-.socials{
-    float: right;
-}
-
-nav ul div img{
-    height: auto;
-    width: auto;
-    object-fit: cover;
-    max-height: 35px;
-}
-
+/*#region Navigation Bar*/
 nav{
     margin: 0;
     padding: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 0 auto;
 }
 
 nav ul{
@@ -88,7 +86,43 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
+/*#endregion Navigaion Bar*/
 
+
+/*#region Socials*/
+.socials{
+    float: right;
+}
+
+.socials li{
+    height: auto;
+    width: auto;
+    max-width: 35px;
+    max-height: 35px;
+    padding: 0%;
+    margin-right: 10px;
+}
+
+.socials li a{
+    height: auto;
+    width: auto;
+    max-width: 35px;
+    max-height: 35px;
+    object-fit: cover;
+    padding: 0%;
+}
+
+
+.socials li a img{
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    max-height: 35px;
+    margin: 5px 10px 10px 0;
+}
+/*#endregion Socials*/
+
+/*#region Hero*/
 .video-bg{
     position: absolute;
     top: 50%;
@@ -134,7 +168,9 @@ nav a:hover::before{
     list-style: none;
     padding: 0;
 }
+/*#endregion Hero*/
 
+/*#region Projects*/
 .projects{
     display: flex;
     justify-content: center;
@@ -161,6 +197,8 @@ nav a:hover::before{
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
 
+    
+
     gap: var(--gap);
     margin: 50px;
     margin-bottom: 25px;
@@ -172,15 +210,9 @@ nav a:hover::before{
     object-fit: cover;
     border: solid white 4px;
 }
+/*#endregion Projects*/
 
-/*Anything under 1024px*/
-@media screen and (max-width: 1024px){
-    .image-grid{
-        --num-cols: 2;
-        --row-height: 200px;
-    }
-}
-
+/*#region About*/
 .about{
     display: flex;
     justify-content: space-between;
@@ -217,3 +249,4 @@ nav a:hover::before{
     margin: 0;
     padding-right: 5%;
 }
+/*#endregion About*/
