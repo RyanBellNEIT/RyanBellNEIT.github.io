@@ -96,30 +96,25 @@ nav a:hover::before{
 /*#region Socials*/
 .socials{
     float: right;
+    height: auto;
+    width: auto;
+    max-height: 35px;
 }
 
 .socials li{
-    height: auto;
-    width: auto;
     max-width: 35px;
-    max-height: 35px;
     padding: 0%;
     margin-right: 10px;
 }
 
 .socials li a{
-    height: auto;
-    width: auto;
     max-width: 35px;
-    max-height: 35px;
     object-fit: cover;
     padding: 0%;
 }
 
 
 .socials li a img{
-    height: auto;
-    width: auto;
     object-fit: cover;
     max-height: 35px;
     margin: 7px 10px 10px 0;
