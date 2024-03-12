@@ -1,0 +1,164 @@
+/*#region Main*/
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: #252627;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-weight: 700;
+    box-shadow: 0 2px 6px 0px rgb(0, 0, 0);
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    margin: 0;
+    background-color: #252627;
+    font-family: 'Agdasima', sans-serif;
+}
+
+h1, h2, p, button, a, ul{
+    color: white;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Anything under 1024px*/
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+/*#endregion Main*/
+
+/*#region Navigation Bar*/
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav-main{
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 2px 6px 0px rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 80px;
+    font-size: 1.5em;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(169, 169, 169);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+/*#endregion Navigaion Bar*/
+
+/*#region Socials*/
+.socials{
+    float: right;
+    height: auto;
+    width: auto;
+    max-height: 35px;
+}
+
+.socials li{
+    max-width: 35px;
+    padding: 0%;
+    margin-right: 10px;
+}
+
+.socials li a{
+    max-width: 1em;
+    object-fit: cover;
+    padding: 0%;
+}
+
+
+.socials li a img{
+    aspect-ratio: 1 1;
+    object-fit: cover;
+    max-height: 1.5em;
+    margin: 7px 10px 10px 0;
+}
+/*#endregion Socials*/
+
+/*#region Project*/
+#projectContainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#projectName{
+    display: flex;
+    justify-content: center;
+}
+
+#projectData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 5%;
+}
+
+#projectAbout{
+    max-width: 30%;
+    font-size: 2vw;
+}
+
+#projectImg{
+    aspect-ratio: 16 9;
+    max-width: 30%;
+    border: solid rgb(61, 61, 61) 4px;
+}
+
+#projectImg:hover{
+    animation: pulse 800ms ease-in-out;
+}
+
+/*#endregion Project*/

@@ -1,0 +1,14 @@
+@keyframes pulse {
+    from, to{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.01;
+    }
+}
+
+nav a:hover{
+    color: rgb(169, 169, 169);
+    transition: 200ms;
+}
