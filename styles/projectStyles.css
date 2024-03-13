@@ -136,7 +136,14 @@ nav a:hover::before{
 #projectName{
     display: flex;
     justify-content: center;
+    font-size: 3em;
 }
+
+/*#projectRole{
+    display: flex;
+    justify-content: right;
+    margin: 0%;
+}*/
 
 #projectData{
     display: flex;
@@ -153,7 +160,8 @@ nav a:hover::before{
 
 #projectImg{
     aspect-ratio: 16 9;
-    max-width: 30%;
+    width: 558px;
+    height: auto;
     border: solid rgb(61, 61, 61) 4px;
 }
 
