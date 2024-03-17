@@ -139,12 +139,6 @@ nav a:hover::before{
     font-size: 3em;
 }
 
-/*#projectRole{
-    display: flex;
-    justify-content: right;
-    margin: 0%;
-}*/
-
 #projectData{
     display: flex;
     align-items: center;
